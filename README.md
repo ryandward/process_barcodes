@@ -2,7 +2,7 @@
 
 This pipeline processes paired-end FASTQ files and extracts barcode counts. It consists of the following steps:
 
-1. Process FASTQ files and generate a shell script (map_it_all.sh) containing the `seal.sh` commands for each pair of input files.
+1. Process current local FASTQ files and generate a shell script (map_it_all.sh) containing the `seal.sh` commands for each pair of input files.
 2. Run concurrent `seal.sh` jobs using the generated script.
 3. Generate overall counts from the output statistics files.
 4. Generate barcode metadata.
